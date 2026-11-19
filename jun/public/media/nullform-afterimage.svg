@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs>
+    <radialGradient id="bg" cx=".52" cy=".46" r=".72">
+      <stop stop-color="#2e1738"/>
+      <stop offset=".38" stop-color="#110a15"/>
+      <stop offset="1" stop-color="#030205"/>
+    </radialGradient>
+    <radialGradient id="violet" cx=".5" cy=".5" r=".5">
+      <stop stop-color="#f0e5ff" stop-opacity=".88"/>
+      <stop offset=".3" stop-color="#c3a5ff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#c3a5ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="46"/></filter>
+    <filter id="grain">
+      <feTurbulence baseFrequency=".67" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .12 0"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g opacity=".4" filter="url(#soft)">
+    <ellipse cx="735" cy="488" rx="260" ry="360" fill="url(#violet)"/>
+    <ellipse cx="905" cy="496" rx="200" ry="310" fill="#76e6ff" opacity=".18"/>
+  </g>
+  <g fill="none">
+    <path d="M640 390Q845 185 1013 390Q1127 540 942 710Q754 860 608 644Q530 520 640 390Z" stroke="#e9dcff" stroke-opacity=".58" stroke-width="2"/>
+    <path d="M680 410Q852 240 976 410Q1068 542 914 672Q764 786 654 620Q602 526 680 410Z" stroke="#76e6ff" stroke-opacity=".47" stroke-width="1"/>
+    <path d="M722 428Q852 295 937 423Q1004 524 890 628Q774 710 702 587Q664 518 722 428Z" stroke="#d5ff64" stroke-opacity=".3" stroke-width="1"/>
+    <ellipse cx="800" cy="503" rx="336" ry="215" stroke="#c3a5ff" stroke-opacity=".14" transform="rotate(-17 800 503)"/>
+  </g>
+  <g fill="#f0e5ff">
+    <circle cx="1298" cy="257" r="3"/><circle cx="274" cy="746" r="4"/>
+    <circle cx="1172" cy="784" r="2"/><circle cx="418" cy="276" r="2"/>
+  </g>
+  <rect width="1600" height="1000" filter="url(#grain)" opacity=".3"/>
+</svg>

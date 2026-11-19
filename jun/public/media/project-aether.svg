@@ -1,0 +1,61 @@
+<svg width="1000" height="1420" viewBox="0 0 1000 1420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="40" y1="20" x2="950" y2="1390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2017"/>
+      <stop offset=".5" stop-color="#0B0E0A"/>
+      <stop offset="1" stop-color="#050605"/>
+    </linearGradient>
+    <linearGradient id="bottle" x1="345" y1="420" x2="672" y2="1070" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9FFC0" stop-opacity=".7"/>
+      <stop offset=".2" stop-color="#8CA86B" stop-opacity=".24"/>
+      <stop offset=".52" stop-color="#24321D" stop-opacity=".65"/>
+      <stop offset=".78" stop-color="#7CA63D" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#D6FF88" stop-opacity=".46"/>
+    </linearGradient>
+    <linearGradient id="label" x1="382" y1="610" x2="636" y2="975" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDE1D5"/>
+      <stop offset="1" stop-color="#A2A898"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(502 700) rotate(90) scale(450 350)">
+      <stop stop-color="#C6F85B" stop-opacity=".23"/>
+      <stop offset="1" stop-color="#C6F85B" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="35"/>
+    </filter>
+    <filter id="blur6" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .13"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1000" height="1420" fill="url(#bg)"/>
+  <ellipse cx="502" cy="675" rx="462" ry="432" fill="url(#halo)" filter="url(#soft)"/>
+  <path d="M0 1120C206 1027 810 1023 1000 1120V1420H0V1120Z" fill="#080A07"/>
+  <ellipse cx="505" cy="1135" rx="267" ry="54" fill="#060706" opacity=".9" filter="url(#soft)"/>
+  <path d="M365 446C365 402 403 367 449 367H558C603 367 642 402 642 446V1004C642 1070 589 1117 526 1117H479C417 1117 365 1070 365 1004V446Z" fill="url(#bottle)" stroke="#D8F5A6" stroke-opacity=".25"/>
+  <rect x="393" y="560" width="220" height="412" rx="3" fill="url(#label)"/>
+  <path d="M393 560H613" stroke="#D9FF8D" stroke-opacity=".6"/>
+  <path d="M421 610H535" stroke="#161A14" stroke-opacity=".7" stroke-width="1.5"/>
+  <path d="M421 618H501" stroke="#161A14" stroke-opacity=".5"/>
+  <text x="420" y="730" fill="#171A15" font-family="sans-serif" font-size="65" font-weight="600" letter-spacing="-4">AETHER</text>
+  <text x="423" y="811" fill="#171A15" font-family="monospace" font-size="10" letter-spacing="3">SCENT AS ATMOSPHERE</text>
+  <text x="423" y="845" fill="#171A15" font-family="monospace" font-size="10" letter-spacing="3">EDITION 01 / 50 ML</text>
+  <path d="M423 896H581" stroke="#171A15" stroke-opacity=".4"/>
+  <path d="M399 481C435 532 571 532 610 479V542C566 590 443 592 399 544V481Z" fill="#0E130C" opacity=".7"/>
+  <path d="M398 488C426 539 574 541 610 489" stroke="#E7FFBB" stroke-opacity=".32"/>
+  <path d="M393 870V1010" stroke="#FFFFFF" stroke-opacity=".15" filter="url(#blur6)"/>
+  <g fill="#DBE3D4" font-family="monospace" font-size="10" letter-spacing="2" opacity=".5">
+    <text x="48" y="64">AETHER / OBJECTS OF AIR</text>
+    <text x="848" y="64">01—24</text>
+    <text x="48" y="1360">PACKAGING SYSTEM / 2025</text>
+    <text x="858" y="1360">31°13′N</text>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity=".08">
+    <path d="M0 136H1000M0 1210H1000M140 0V1420M860 0V1420"/>
+  </g>
+  <rect width="1000" height="1420" filter="url(#grain)" opacity=".5"/>
+</svg>

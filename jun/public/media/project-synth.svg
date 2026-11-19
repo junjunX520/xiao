@@ -1,0 +1,64 @@
+<svg width="1600" height="1080" viewBox="0 0 1600 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="746" y1="0" x2="882" y2="1060" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101710"/>
+      <stop offset=".58" stop-color="#253621"/>
+      <stop offset="1" stop-color="#080A07"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(803 481) rotate(90) scale(249)">
+      <stop stop-color="#DBFF91"/>
+      <stop offset=".42" stop-color="#A7DD4C"/>
+      <stop offset="1" stop-color="#4D6D29" stop-opacity=".2"/>
+    </radialGradient>
+    <linearGradient id="ground" x1="0" y1="780" x2="0" y2="1080">
+      <stop stop-color="#131711"/>
+      <stop offset="1" stop-color="#070807"/>
+    </linearGradient>
+    <filter id="blur50" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
+    <filter id="blur12" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .2"/></feComponentTransfer>
+    </filter>
+    <clipPath id="frame"><rect width="1600" height="1080"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1600" height="1080" fill="url(#sky)"/>
+    <circle cx="800" cy="482" r="265" fill="url(#sun)" filter="url(#blur12)"/>
+    <circle cx="800" cy="482" r="212" fill="#B5EA59"/>
+    <g opacity=".18" fill="#061006">
+      <rect x="0" y="515" width="1600" height="5"/>
+      <rect x="0" y="550" width="1600" height="8"/>
+      <rect x="0" y="595" width="1600" height="11"/>
+      <rect x="0" y="648" width="1600" height="15"/>
+      <rect x="0" y="715" width="1600" height="22"/>
+    </g>
+    <path d="M0 825L1600 797V1080H0V825Z" fill="url(#ground)"/>
+    <g stroke="#BDEF62" stroke-opacity=".18">
+      <path d="M0 897H1600M0 969H1600M0 1045H1600"/>
+      <path d="M800 810V1080M504 813L202 1080M1096 808L1397 1080M294 816L-16 1080M1300 808L1620 1080"/>
+      <path d="M130 827L737 795M1480 806L860 793"/>
+    </g>
+    <ellipse cx="798" cy="820" rx="620" ry="60" fill="#A5D849" opacity=".12" filter="url(#blur50)"/>
+    <path d="M723 745V403C723 337 765 297 815 297C866 297 904 338 904 402V745C904 871 835 956 814 956C783 956 723 871 723 745Z" fill="#11150F" opacity=".96"/>
+    <path d="M733 743V408C733 355 767 315 813 315C859 315 894 353 894 407V743C894 850 838 931 814 943C789 931 733 853 733 743Z" fill="#A6D950"/>
+    <path d="M746 671H882V746H746V671Z" fill="#0D110C"/>
+    <path d="M750 674H878" stroke="#D8FF94" stroke-opacity=".4"/>
+    <path d="M797 496H829" stroke="#0C110B" stroke-width="3"/>
+    <path d="M797 520H829" stroke="#0C110B" stroke-width="3"/>
+    <path d="M797 544H829" stroke="#0C110B" stroke-width="3"/>
+    <g fill="#DDE9D2" font-family="monospace" font-size="10" letter-spacing="2" opacity=".58">
+      <text x="48" y="58">SYNTH / MOTION STUDY 03</text>
+      <text x="1403" y="58">00:02:11:08</text>
+      <text x="48" y="1028">AFTER THE SIGNAL</text>
+      <text x="1392" y="1028">A7S III / 24 FPS</text>
+    </g>
+    <path d="M44 42H88M44 42V86M1556 42H1512M1556 42V86M44 1038H88M44 1038V994M1556 1038H1512M1556 1038V994" stroke="#E8F4DD" stroke-opacity=".35"/>
+    <rect width="1600" height="1080" filter="url(#grain)" opacity=".55"/>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg width="1800" height="1120" viewBox="0 0 1800 1120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="50" y1="60" x2="1720" y2="1070" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9EBE1"/>
+      <stop offset=".55" stop-color="#CCD1C2"/>
+      <stop offset="1" stop-color="#9FA695"/>
+    </linearGradient>
+    <linearGradient id="tube" x1="1092" y1="270" x2="1219" y2="901" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E3FF9D"/>
+      <stop offset=".18" stop-color="#AFE748"/>
+      <stop offset=".56" stop-color="#5D8A1D"/>
+      <stop offset=".84" stop-color="#293D12"/>
+      <stop offset="1" stop-color="#B3DF65"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(986 571) rotate(90) scale(221 520)">
+      <stop stop-color="#DEFF8A"/>
+      <stop offset=".46" stop-color="#91C436"/>
+      <stop offset="1" stop-color="#3E5C1E"/>
+    </radialGradient>
+    <filter id="shadow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <filter id="blur" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .1"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1800" height="1120" fill="url(#bg)"/>
+  <path d="M0 880L1800 650V1120H0V880Z" fill="#111410"/>
+  <path d="M0 883L1800 654" stroke="#C6F85B" stroke-opacity=".45"/>
+  <ellipse cx="921" cy="950" rx="434" ry="83" fill="#080A08" opacity=".45" filter="url(#shadow)"/>
+  <g>
+    <path d="M774 815C797 665 813 497 846 327C862 247 926 202 1002 222C1082 243 1111 306 1105 385C1093 531 1116 663 1155 811C1175 889 1121 941 1044 948C964 954 889 936 823 906C783 887 764 856 774 815Z" fill="#273222"/>
+    <path d="M846 326C889 401 963 426 1043 404C1091 391 1114 357 1117 328C1121 282 1082 243 1021 227C955 209 887 234 857 282C848 297 844 312 846 326Z" fill="#141B12"/>
+    <path d="M841 328C868 422 950 457 1045 423C1089 408 1111 377 1117 329C1100 445 1132 613 1155 811C1175 889 1121 941 1044 948C964 954 889 936 823 906C783 887 764 856 774 815C799 659 819 467 841 328Z" fill="url(#tube)"/>
+    <path d="M855 345C914 386 995 401 1078 360C1101 349 1114 339 1118 329C1092 449 1126 620 1155 811" stroke="#DFFF9B" stroke-opacity=".36" stroke-width="6" filter="url(#blur)"/>
+    <ellipse cx="982" cy="332" rx="136" ry="72" fill="#10180E"/>
+    <ellipse cx="982" cy="334" rx="115" ry="56" fill="url(#core)"/>
+    <ellipse cx="982" cy="334" rx="79" ry="35" fill="#0E130C"/>
+    <ellipse cx="982" cy="334" rx="64" ry="27" fill="#C6F85B" opacity=".8" filter="url(#blur)"/>
+  </g>
+  <circle cx="982" cy="334" r="228" stroke="#29331F" stroke-opacity=".3"/>
+  <circle cx="982" cy="334" r="279" stroke="#29331F" stroke-opacity=".18"/>
+  <g fill="#12150F" font-family="sans-serif">
+    <text x="76" y="100" font-size="17" font-weight="600" letter-spacing="5">NOVA / 新星</text>
+    <text x="76" y="136" font-size="10" letter-spacing="3" opacity=".52">BRAND SYSTEM &amp; AI ART DIRECTION</text>
+    <text x="1460" y="99" font-size="10" letter-spacing="3" opacity=".55">CASE STUDY 01</text>
+    <text x="76" y="949" font-size="172" font-weight="600" letter-spacing="-12">NOVA®</text>
+    <text x="1514" y="1010" font-size="10" letter-spacing="3" opacity=".7">FORM / 2026</text>
+  </g>
+  <g stroke="#12150F" stroke-opacity=".18">
+    <path d="M0 208H1800M0 843H1800"/>
+    <path d="M372 0V1120M1421 0V1120"/>
+  </g>
+  <rect width="1800" height="1120" filter="url(#grain)" opacity=".5"/>
+</svg>

@@ -1,0 +1,13 @@
+.ripple-text {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: auto;
+  transition: opacity 300ms ease;
+}
+
+.ripple-text.is-ready {
+  opacity: 1;
+}

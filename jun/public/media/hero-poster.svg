@@ -1,0 +1,77 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1265 489) rotate(110) scale(991 1123)">
+      <stop stop-color="#182116"/>
+      <stop offset="0.52" stop-color="#0D110D"/>
+      <stop offset="1" stop-color="#070907"/>
+    </radialGradient>
+    <radialGradient id="orb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1310 360) rotate(132) scale(420 340)">
+      <stop stop-color="#D7FF7A"/>
+      <stop offset="0.28" stop-color="#92C43A"/>
+      <stop offset="0.7" stop-color="#3E5A22"/>
+      <stop offset="1" stop-color="#10190D"/>
+    </radialGradient>
+    <radialGradient id="orbLight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1183 250) rotate(45) scale(217)">
+      <stop stop-color="#F3FFCA" stop-opacity=".9"/>
+      <stop offset=".5" stop-color="#C6F85B" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#C6F85B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1320 550) rotate(90) scale(650 600)">
+      <stop stop-color="#A3D744" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#A3D744" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2=".2">
+      <stop stop-color="#C6F85B" stop-opacity=".12"/>
+      <stop offset=".54" stop-color="#D7FF99" stop-opacity=".03"/>
+      <stop offset="1" stop-color="#C6F85B" stop-opacity=".08"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#20281D"/>
+      <stop offset="1" stop-color="#070907"/>
+    </linearGradient>
+    <filter id="blur60" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+    <filter id="blur16" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 .17"/>
+      </feComponentTransfer>
+    </filter>
+    <clipPath id="clip">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1920" height="1080" fill="url(#bg)"/>
+    <ellipse cx="1285" cy="550" rx="640" ry="540" fill="url(#glow)" filter="url(#blur60)"/>
+    <path d="M1680 110L980 1080H1290L1835 86L1680 110Z" fill="url(#beam)" filter="url(#blur16)"/>
+    <rect x="1090" y="767" width="630" height="313" fill="url(#floor)" opacity=".78"/>
+    <ellipse cx="1320" cy="813" rx="310" ry="54" fill="#2A351B" opacity=".55" filter="url(#blur16)"/>
+    <circle cx="1314" cy="471" r="281" fill="url(#orb)"/>
+    <circle cx="1314" cy="471" r="280" stroke="#E7FFAD" stroke-opacity=".35"/>
+    <ellipse cx="1216" cy="339" rx="152" ry="109" fill="url(#orbLight)" opacity=".8" filter="url(#blur16)"/>
+    <path d="M1090 525C1117 645 1199 734 1317 752" stroke="#0A1008" stroke-opacity=".55" stroke-width="2"/>
+    <path d="M1074 638C1164 777 1321 817 1491 730" stroke="#E4FFAD" stroke-opacity=".16"/>
+    <circle cx="1314" cy="471" r="375" stroke="#C6F85B" stroke-opacity=".11"/>
+    <circle cx="1314" cy="471" r="470" stroke="#C6F85B" stroke-opacity=".07"/>
+    <circle cx="1314" cy="471" r="635" stroke="#FFFFFF" stroke-opacity=".035"/>
+    <path d="M0 884H1920" stroke="#C6F85B" stroke-opacity=".1"/>
+    <g opacity=".12" stroke="#D7DED3">
+      <path d="M0 108H1920M0 324H1920M0 540H1920M0 756H1920M0 972H1920"/>
+      <path d="M192 0V1080M576 0V1080M960 0V1080M1344 0V1080M1728 0V1080"/>
+    </g>
+    <g fill="#D9EAC5" font-family="monospace" font-size="10" letter-spacing="2" opacity=".42">
+      <text x="48" y="52">ARTIFACT_01 / SYNTHETIC LIGHT</text>
+      <text x="1644" y="52">FRAME 018</text>
+      <text x="48" y="1030">VISUAL STUDIES / VOL. 06</text>
+      <text x="1700" y="1030">31°13′49″N</text>
+    </g>
+    <rect width="1920" height="1080" filter="url(#grain)" opacity=".33"/>
+    <rect x="0.5" y="0.5" width="1919" height="1079" stroke="#FFFFFF" stroke-opacity=".08"/>
+  </g>
+</svg>

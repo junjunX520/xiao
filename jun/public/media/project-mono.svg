@@ -1,0 +1,48 @@
+<svg width="1600" height="1080" viewBox="0 0 1600 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D5D3C9"/>
+      <stop offset=".54" stop-color="#BBBCAF"/>
+      <stop offset="1" stop-color="#898B80"/>
+    </linearGradient>
+    <linearGradient id="poster" x1="344" y1="149" x2="1133" y2="919" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEEDE5"/>
+      <stop offset="1" stop-color="#C8C9BD"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="25"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .11"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1600" height="1080" fill="url(#bg)"/>
+  <ellipse cx="847" cy="937" rx="577" ry="71" fill="#30322D" opacity=".27" filter="url(#shadow)"/>
+  <g transform="rotate(-5 800 540)">
+    <rect x="309" y="111" width="874" height="816" fill="#252823" opacity=".22" filter="url(#shadow)"/>
+    <rect x="300" y="95" width="874" height="816" fill="url(#poster)"/>
+    <path d="M300 95H1174V911H300V95Z" stroke="#FFFFFF" stroke-opacity=".5"/>
+    <text x="350" y="169" fill="#171A15" font-family="monospace" font-size="10" letter-spacing="3">MONO / VISUAL IDENTITY SYSTEM</text>
+    <text x="1030" y="169" fill="#171A15" font-family="monospace" font-size="10" letter-spacing="2">ISSUE 01</text>
+    <path d="M350 196H1124" stroke="#171A15" stroke-opacity=".35"/>
+    <text x="346" y="705" fill="#171A15" font-family="sans-serif" font-size="358" font-weight="600" letter-spacing="-28">M</text>
+    <text x="577" y="705" fill="transparent" stroke="#171A15" stroke-width="2" font-family="sans-serif" font-size="358" font-weight="600" letter-spacing="-28">O</text>
+    <circle cx="939" cy="509" r="117" fill="#171A15"/>
+    <circle cx="939" cy="509" r="60" fill="#C6F85B"/>
+    <path d="M350 775H1124M350 816H1124M350 850H1124" stroke="#171A15" stroke-opacity=".24"/>
+    <text x="350" y="865" fill="#171A15" font-family="monospace" font-size="10" letter-spacing="3">LESS, BUT WITH INTENT.</text>
+    <text x="1002" y="865" fill="#171A15" font-family="monospace" font-size="10" letter-spacing="2">STUDIO 24</text>
+  </g>
+  <g fill="#171A15" font-family="monospace" font-size="10" letter-spacing="2" opacity=".5">
+    <text x="50" y="58">MONO / BETWEEN THE LINES</text>
+    <text x="1378" y="58">BRAND ARCHIVE</text>
+    <text x="50" y="1030">PRINT / DIGITAL / EDITORIAL</text>
+    <text x="1400" y="1030">2024</text>
+  </g>
+  <g stroke="#171A15" stroke-opacity=".1">
+    <path d="M0 133H1600M0 964H1600M135 0V1080M1464 0V1080"/>
+  </g>
+  <rect width="1600" height="1080" filter="url(#grain)" opacity=".5"/>
+</svg>
